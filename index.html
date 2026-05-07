@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Frutos do Mar - Cardápio Online</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header class="header" id="header">
+			<div class="container header-content">
+				<a href="#" class="logo">
+					<span class="logo-icon">🐟</span>
+					Frutos do Mar
+				</a>
+				<button
+					class="cart-toggle"
+					id="cartToggle"
+					aria-label="Abrir carrinho"
+				>
+					🛒
+					<span class="cart-badge" id="cartBadge">0</span>
+				</button>
+			</div>
+		</header>
+
+		<section class="hero">
+			<div class="hero-bg"></div>
+			<div class="hero-overlay"></div>
+			<div class="wave-divider">
+				<svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+					<path
+						fill="#F0F4F8"
+						d="M0,40 C360,100 720,0 1080,60 C1260,90 1350,70 1440,50 L1440,100 L0,100 Z"
+					/>
+				</svg>
+			</div>
+			<div class="hero-content">
+				<h1>Frutos do Mar</h1>
+				<p>O sabor do oceano na sua mesa</p>
+				<a href="#cardapio" class="btn-hero">Ver Cardápio</a>
+			</div>
+		</section>
+
+		<section class="menu" id="cardapio">
+			<div class="container">
+				<h2 class="section-title">Nosso Cardápio</h2>
+				<p class="section-subtitle">
+					Selecione os pratos e faça seu pedido pelo WhatsApp
+				</p>
+				<div class="tabs" id="tabs"></div>
+				<div class="dish-grid" id="dishGrid"></div>
+			</div>
+		</section>
+
+		<div class="cart-overlay" id="cartOverlay"></div>
+		<aside class="cart" id="cart">
+			<div class="cart-header">
+				<h3>Seu Pedido</h3>
+				<button class="cart-close" id="cartClose">&times;</button>
+			</div>
+			<div class="cart-items" id="cartItems">
+				<div class="cart-empty">Seu carrinho está vazio</div>
+			</div>
+			<div class="cart-footer">
+				<div class="cart-total">
+					<span>Total</span>
+					<span id="cartTotal">R$ 0,00</span>
+				</div>
+				<button class="btn-clear" id="btnClearCart">
+					🗑️ Limpar Carrinho
+				</button>
+				<button class="btn-whatsapp" id="btnWhatsApp" disabled>
+					<span>💬</span> Enviar Pedido via WhatsApp
+				</button>
+			</div>
+		</aside>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-content">
+					<div>
+						<h4>Frutos do Mar</h4>
+						<p>📍 Rua das Ondas, 123 - Centro</p>
+						<p>🕐 Seg-Dom: 11h às 23h</p>
+						<p>📞 (11) 99999-9999</p>
+					</div>
+					<div>
+						<h4>Horários</h4>
+						<p>Segunda a Sexta: 11h às 23h</p>
+						<p>Sábado: 11h às 00h</p>
+						<p>Domingo: 12h às 22h</p>
+					</div>
+					<div>
+						<h4>Formas de Pagamento</h4>
+						<p>Dinheiro, Cartão de Crédito/Débito</p>
+						<p>Pix, Vale-Refeição</p>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>
+						&copy; 2026 Frutos do Mar. Todos os direitos reservados.
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<div class="toast-container" id="toastContainer"></div>
+
+		<script src="js/data.js"></script>
+		<script src="js/cart.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
